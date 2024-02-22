@@ -1,0 +1,416 @@
+body{
+    
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 2.7rem;
+}
+
+.wrapper {
+    
+    box-sizing: border-box;
+    position: relative;
+    /*overflow-y: scroll;
+    scroll-snap-type: y mandatory; */
+}
+
+#landing {
+    
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #FAFAF5;
+     /* display: flex; */
+}
+
+#landing_content_container {
+    width: auto;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    padding: 100px;
+    
+
+}
+
+
+
+#landing_content_container > img {
+    width: 170px;
+}
+
+#landing_content_container > h1 {
+    position: relative;
+    top: 10vh;
+    width: 100%;
+}
+
+#landing_img_container {
+    position: absolute;
+    width: 400px;
+    height: 700px;
+    top: 0px;
+    right: 100px;
+
+}
+
+#landing_img_container > img {
+    position: relative;
+    height: 75vh;
+    right: 40%;
+    z-index: 0;
+}
+
+
+
+.tab_box {
+    
+    width: 100vw;
+    height: fit-content;
+    position: absolute;
+    bottom: 0px;
+    /* transform: translateY(33%); */
+    transition: transform 0.2s ease-out;
+    z-index: 5;
+    
+}
+
+.add-transition {
+    transition: transform 0.2s ease-out;
+
+}
+
+.folder_svg{
+    
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    
+}
+
+#tab {
+    fill: #007ACB;
+
+}
+
+.tab_box > h2 {
+    
+    margin: 0px;
+    position: absolute;
+    top: 23%;
+    left: 5%;
+    width: 50%;
+    font-weight: 400;
+    color:#00A6E9;
+    font-size: 2.4vw;
+    transition: color 0.2s;
+
+}
+
+text_color_white {
+    color: #FAFAF5;
+
+}
+
+#front-transform-container {
+    
+    transform: translateY(0px);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+
+}
+
+#folder_front {
+    
+    position: absolute;
+    top: 0;
+    /* transform-origin: top left; */
+    transform: translateY(0px);
+    
+    
+    /* animation: folder_move linear both;
+    animation-timeline: view();
+    animation-range: entry 45% exit 100%; */
+}
+
+/* .tab_box:hover {
+    transform: translateY(0.5%);
+
+}
+
+.tab_box:hover #folder_front {
+    transform: translateY(2vw);
+
+}
+
+.folder_front_hover {
+    transform: translateY(2vw);
+
+} */
+
+
+#folder {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    background-color: #007ACB;
+    /* scroll-snap-align: start;
+    scroll-snap-stop: always; */
+    z-index: 1;
+    
+}
+
+.header_text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 5rem;
+    position: relative;
+    width: 50%;
+    padding-top: calc(100vh / 2.5);
+    margin: auto;
+    text-align: center;
+    animation: fade-in linear both;
+    animation-timeline: view();
+    animation-range: cover 25% contain 70%;
+    z-index: 0;
+    
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+#How_container {
+
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+
+
+}
+
+.two_column_section{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.two_column_img {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    flex:1;
+    justify-content: center;
+
+}
+
+.two_column_img > img {
+
+    justify-content: center;
+    width: 100%;
+
+}
+
+.two_column_text {
+    
+    display: flex;
+    width: 65%;
+    flex-direction: column;
+    /* margin-left: -2.5rem; */
+    justify-content: center;
+    font-size: 2.7rem;
+
+}
+
+/* -------------Company section---------- */
+
+#company_container{
+    box-sizing: border-box;
+    display: flex;
+    padding: 100px;
+    justify-content: space-evenly;
+    height: auto;
+    position: relative;
+    margin-top: 50px;
+
+}
+
+.company_logo_container{
+    width: 20vw;
+
+}
+
+.company_logo_container > img{
+    width:100%;
+    
+}
+
+/* -------------featured projects-------- */
+
+#featured_projects{
+    width:100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 100px;
+   
+
+}
+
+/* -------------project cards------------ */
+
+.project_card_container{
+    width: 1297px;
+    height: 623px;
+
+    background-color: #00A6E9;
+    border-radius: 80px;
+    display: flex;
+
+    box-sizing: border-box;
+    padding: 40px;
+
+}
+
+.project_card_img_container {
+    width: 70%;
+    height: 100%;
+    border-radius: 40px;
+    transition: width 0.3s;
+
+}
+
+.project_card_img_container > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+
+}
+
+.project_card_text_container{
+    width: 20%;
+    margin-left: 20px;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.project_title {
+    font-weight: 700;
+    font-size: 4.3rem;
+}
+
+.description_preview {
+    font-weight: 300;
+    font-size: 2.7rem;
+    margin: 0;
+    flex: 1;
+}
+
+.description {
+    /* display: none; */
+    height: auto;
+    font-size: 1.6rem;
+    font-weight: 300;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.skills {
+    /* display: none; */
+    font-size: 1.6rem;
+    font-weight: 300;
+    
+    margin-top: auto;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+.button_shadow {
+    box-shadow: 0 10px 0 #007ACB;
+
+}
+
+.button_shadow:active {
+    box-shadow: none;
+    transform: translateY(10px);
+}
+
+.project_card_container:hover .project_card_img_container {
+    width:30%;
+
+}
+
+.project_card_container:hover .description_preview{
+    display: none;
+
+}
+
+.project_card_container:hover .description{
+    transition: opacity 0.3s;
+    
+    opacity: 1;
+}
+
+.project_card_container:hover .skills{
+    transition: opacity 0.3s;
+    
+    opacity: 1;
+
+}
+
+
+
+
+
+/* --------------highlights-------------- */
+
+.highlight {
+    
+    color: #00A6E9;
+    font-weight: 700;
+
+}
+
+.highlight:hover {
+    
+    color: #007ACB;
+
+}
+
+.highlight_link {
+
+    font-weight: 700;
+    color: #FAFAF5;
+    text-decoration: underline;
+
+}
+
+.highlight_link:hover {
+
+    font-weight: 700;
+    color: #007ACB;
+
+}
